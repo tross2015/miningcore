@@ -506,6 +506,25 @@
         "explorerTxLink": "http://explorer.geekcash.org/tx/{0}",
         "explorerAccountLink": "http://explorer.geekcash.org/address/{0}"
     },
+    "globaltoken": {
+        "name": "Globaltoken",
+        "symbol": "GLT",
+        "family": "bitcoin",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "sha256d"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [ { "hash": "sha256d" } ]
+        },
+        "hasMasterNodes": true,
+        "explorerBlockLink": "https://bchain.info/GLT/block/$height$",
+        "explorerTxLink": "https://bchain.info/GLT/tx/{0}",
+        "explorerAccountLink": "https://bchain.info/GLT/addr/{0}"
+    },
     "goldcash": {
         "name": "Gold Cash",
         "symbol": "GOLD",
@@ -518,7 +537,7 @@
         },
         "blockHasher": {
             "hash": "reverse",
-            "args": [ { "hash": "yescryptR16" } ]
+            "args": [ { "hash": "sha256d" } ]
         },
         "shareMultiplier": 1048576,
         "explorerBlockLink": "http://www.goldcashblockexplorer.co.uk/block/$height$",
@@ -543,24 +562,6 @@
         "explorerBlockLink": "https://groestlsight.groestlcoin.org/block/$height$",
         "explorerTxLink": "https://groestlsight.groestlcoin.org/tx/{0}",
         "explorerAccountLink": "https://groestlsight.groestlcoin.org/address/{0}"
-    },
-    "globaltoken": {
-        "name": "Globaltoken",
-        "symbol": "GLT",
-        "family": "bitcoin",
-        "coinbaseHasher": {
-            "hash": "sha256d"
-        },
-        "headerHasher": {
-            "hash": "sha256d"
-        },
-        "blockHasher": {
-            "hash": "reverse",
-            "args": [ { "hash": "sha256d" } ]
-        },
-        "explorerBlockLink": "https://bchain.info/GLT/block/$height$",
-        "explorerTxLink": "https://bchain.info/GLT/tx/{0}",
-        "explorerAccountLink": "https://bchain.info/GLT/addr/{0}"
     },
     "help-the-homeless": {
         "name": "Help The Homeless",
