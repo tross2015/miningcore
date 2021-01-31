@@ -437,6 +437,25 @@
         "explorerTxLink": "https://dogechain.info/tx/{0}",
         "explorerAccountLink": "https://dogechain.info/address/{0}"
     },
+    "elicoin": {
+        "name": "Elicoin",
+        "symbol": "ELI",
+        "family": "bitcoin",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "yescryptR16"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [ { "hash": "sha256d" } ]
+        },
+        "shareMultiplier": 1048576,
+        "explorerBlockLink": "http://block.elicoin.net/?page=block&hash=$hash$",
+        "explorerTxLink": "http://block.elicoin.net/?page=tx&id={0}",
+        "explorerAccountLink": "http://block.elicoin.net/?page=search&id={0}"
+    },
     "flo": {
         "name": "Florin",
         "symbol": "FLO",
