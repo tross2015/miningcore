@@ -224,7 +224,7 @@
         "explorerAccountLink": "https://openchains.info/coin/browncoin/address/{0}"
     },
     "cannabiscoin": {
-        "name": "CannabisCoin",
+        "name": "Cannabiscoin",
         "symbol": "CANN",
         "family": "bitcoin",
         "coinbaseHasher": {
@@ -438,7 +438,7 @@
         "explorerAccountLink": "https://dogechain.info/address/{0}"
     },
     "flo": {
-        "name": "FLO",
+        "name": "Florin",
         "symbol": "FLO",
         "family": "bitcoin",
         "coinbaseHasher": {
@@ -469,7 +469,7 @@
         "explorerAccountLink": "http://network.flo.cash/address/{0}"
     },
     "freecash": {
-        "name": "FreeCash",
+        "name": "Free Cash",
         "symbol": "FCH",
          "family": "bitcoin",
          "coinbaseHasher": {
@@ -488,7 +488,7 @@
         "explorerAccountLink": "https://freecash.info/address?address={0}"
     },
     "geekcash": {
-        "name": "GeekCash",
+        "name": "Geek Cash",
         "symbol": "GEEK",
         "family": "bitcoin",
         "coinbaseHasher": {
@@ -545,7 +545,7 @@
         "explorerAccountLink": "http://www.goldcashblockexplorer.co.uk/address/{0}"
     },
     "groestlcoin": {
-        "name": "GroestlCoin",
+        "name": "Groestlcoin",
         "symbol": "GRS",
         "family": "bitcoin",
         "coinbaseHasher": {
@@ -584,7 +584,7 @@
         "explorerAccountLink": "http://explorer.hthcoin.world/address/{0}"
     },
     "indexchain": {
-        "name": "IndexChain",
+        "name": "Indexchain",
         "symbol": "IDX",
         "family": "bitcoin",
         "coinbaseHasher": {
@@ -692,7 +692,7 @@
         "explorerAccountLink": "https://bchain.info/MONA/addr/{0}"
     },
     "mooncoin": {
-        "name": "MoonCoin",
+        "name": "Mooncoin",
         "symbol": "MOON",
         "family": "bitcoin",
         "coinbaseHasher": {
@@ -739,7 +739,7 @@
         "explorerAccountLink": "https://explorer.namecoin.info/a/{0}"
     },
     "note-blockchain": {
-        "name": "Note Blockchain",
+        "name": "Notecoin",
         "symbol": "NTBC",
         "family": "bitcoin",
         "coinbaseHasher": {
@@ -787,7 +787,7 @@
         "explorerAccountLink": "http://explorer.paccoin.net/address/{0}"
     },
     "pakcoin": {
-        "name": "PAKcoin",
+        "name": "Pakcoin",
         "symbol": "PAK",
         "family": "bitcoin",
         "coinbaseHasher": {
@@ -853,7 +853,7 @@
         "explorerAccountLink": "http://explorer.pigeoncoin.org/address/{0}"
     },
     "pyrk-sha256": {
-        "name": "Pyrk Sha256",
+        "name": "Pyrk-Sha256",
         "canonicalName": "Pyrk",
         "symbol": "PYRK",
         "family": "bitcoin",
@@ -873,7 +873,7 @@
         "explorerAccountLink": "https://explorer.pyrk.org/address/{0}"
     },
     "pyrk-scrypt": {
-        "name": "Pyrk Scrypt",
+        "name": "Pyrk-Scrypt",
         "canonicalName": "Pyrk",
         "symbol": "PYRK",
         "family": "bitcoin",
@@ -904,7 +904,7 @@
         "explorerAccountLink": "https://explorer.pyrk.org/address/{0}"
     },
     "pyrk-x11": {
-        "name": "Pyrk X11",
+        "name": "Pyrk-X11",
         "canonicalName": "Pyrk",
         "symbol": "PYRK",
         "family": "bitcoin",
@@ -924,7 +924,7 @@
         "explorerAccountLink": "https://explorer.pyrk.org/address/{0}"
     },
     "rosecoin": {
-        "name": "RoseCoin",
+        "name": "Rosecoin",
         "symbol": "ROC",
         "family": "bitcoin",
         "coinbaseHasher": {
