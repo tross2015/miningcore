@@ -506,6 +506,25 @@
         "explorerTxLink": "http://explorer.geekcash.org/tx/{0}",
         "explorerAccountLink": "http://explorer.geekcash.org/address/{0}"
     },
+    "goldcash": {
+        "name": "Gold Cash",
+        "symbol": "GOLD",
+        "family": "bitcoin",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "yescryptR16"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [ { "hash": "yescryptR16" } ]
+        },
+        "shareMultiplier": 1048576,
+        "explorerBlockLink": "http://www.goldcashblockexplorer.co.uk/block/$height$",
+        "explorerTxLink": "http://www.goldcashblockexplorer.co.uk/tx/{0}",
+        "explorerAccountLink": "http://www.goldcashblockexplorer.co.uk/address/{0}"
+    },
     "groestlcoin": {
         "name": "GroestlCoin",
         "symbol": "GRS",
@@ -583,9 +602,9 @@
         },
         "hasMasterNodes": true,
         "shareMultiplier": 4096,
-        "explorerBlockLink": "http://202.182.107.84/block/$hash$",
-        "explorerTxLink": "http://202.182.107.84/tx/{0}",
-        "explorerAccountLink": "http://202.182.107.84/address/{0}"
+        "explorerBlockLink": "http://157.245.248.32:3000/#/block/$hash$",
+        "explorerTxLink": "http://157.245.248.32:3000/#/tx/{0}",
+        "explorerAccountLink": "http://157.245.248.32:3000/#/address/{0}"
     },
     "lanacoin": {
         "name": "Lanacoin",
@@ -983,26 +1002,7 @@
             "hash": "sha256d"
         },
         "headerHasher": {
-            "hash": "yespower_sugarchain"
-        },
-        "blockHasher": {
-            "hash": "reverse",
-            "args": [ { "hash": "sha256d" } ]
-        },
-        "shareMultipler":4194304,
-        "explorerBlockLink": "https://1explorer.sugarchain.org/block/$hash$",
-        "explorerTxLink": "https://1explorer.sugarchain.org/tx/{0}",
-        "explorerAccountLink": "https://1explorer.sugarchain.org/address/{0}"
-    },
-    "sugarchain-testnet": {
-        "name": "TSugarchain",
-        "symbol": "tSUGAR",
-        "family": "bitcoin",
-        "coinbaseHasher": {
-            "hash": "sha256d"
-        },
-        "headerHasher": {
-            "hash": "yespower_sugarchain"
+            "hash": "yespower_sugar"
         },
         "blockHasher": {
             "hash": "reverse",
