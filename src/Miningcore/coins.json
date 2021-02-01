@@ -1339,6 +1339,25 @@
         "explorerTxLink": "https://explorer.xazab.xyz/insight/tx/{0}",
         "explorerAccountLink": "https://explorer.xazab.xyz/insight/address/{0}"
     },
+    "yenten": {
+        "name": "Yenten",
+        "symbol": "YTN",
+        "family": "bitcoin",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "yespower_r16"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [ { "hash": "sha256d" } ]
+        },
+        "shareMultiplier": 65536,
+        "explorerBlockLink": "http://ytn.ccore.online/block/$height$",
+        "explorerTxLink": "http://ytn.ccore.online/transaction/{0}",
+        "explorerAccountLink": "http://ytn.ccore.online/address/{0}"
+    },
     "zentoshi": {
         "name": "Zentoshi",
         "symbol": "ZENX",
