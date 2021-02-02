@@ -1351,7 +1351,7 @@
         },
         "blockHasher": {
             "hash": "reverse",
-            "args": [ { "hash": "sha256d" } ]
+            "args": [ { "hash": "yespower_r16" } ]
         },
         "shareMultiplier": 65536,
         "explorerBlockLink": "http://ytn.ccore.online/block/$height$",
