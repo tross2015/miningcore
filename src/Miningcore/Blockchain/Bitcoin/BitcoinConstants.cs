@@ -30,11 +30,12 @@ namespace Miningcore.Blockchain.Bitcoin
         /// Legacy address
         /// </summary>
         Legacy,
-
+        
         /// <summary>
         /// Bech encoded, segwit
         /// </summary>
         BechSegwit,
+        
         /// <summary>
         /// Bcash custom bech encoded
         /// </summary>
@@ -173,7 +174,6 @@ namespace Miningcore.Blockchain.Bitcoin
 
         // Legacy commands
         public const string GetInfo = "getinfo";
-
         public const string GetDifficulty = "getdifficulty";
         public const string GetConnectionCount = "getconnectioncount";
     }
