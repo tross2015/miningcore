@@ -158,6 +158,24 @@
         "explorerTxLink": "https://blockchain.info/tx/{0}",
         "explorerAccountLink": "https://blockchain.info/address/{0}"
     },
+    "bitcoin-atom": {
+        "name": "Bitcoin Atom",
+        "symbol": "BCA",
+        "family": "bitcoin",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "sha256d"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [ { "hash": "sha256d" } ]
+        },
+        "explorerBlockLink": "https://explorer.bitcoinatom.io/block-height/$height$",
+        "explorerTxLink": "https://explorer.bitcoinatom.io/tx/{0}",
+        "explorerAccountLink": "https://explorer.bitcoinatom.io/address/{0}"
+    },
     "bitcoin-cash": {
         "name": "Bitcoin Cash",
         "symbol": "BCH",
