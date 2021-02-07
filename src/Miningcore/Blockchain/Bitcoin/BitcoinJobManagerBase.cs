@@ -384,7 +384,7 @@ namespace Miningcore.Blockchain.Bitcoin
                 var miningInfoResponse = results[1].Response.ToObject<MiningInfo>();
 
                 BlockchainStats.ConnectedPeers = (int) (long) connectionCountResponse;
-                BlockchainStats.NetworkHashrate = miningInfoResponse.NetmHashps;
+                BlockchainStats.NetworkHashrate = miningInfoResponse.NetmHashps *= 100;
             }
 
             catch(Exception e)
