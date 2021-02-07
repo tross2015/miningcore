@@ -1051,6 +1051,25 @@
         "explorerTxLink": "https://1explorer.sugarchain.org/tx/{0}",
         "explorerAccountLink": "https://1explorer.sugarchain.org/address/{0}"
     },
+    "swippcoin": {
+        "name": "Swipp",
+        "symbol": "SWP",
+        "family": "bitcoin",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "x11"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [ { "hash": "x11" } ]
+        },
+        "hasMasterNodes": true,
+        "explorerBlockLink": "http://explorer.swippcoin.com/block/$height$",
+        "explorerTxLink": "http://explorer.swippcoin.com/tx/{0}",
+        "explorerAccountLink": "http://explorer.swippcoin.com/address/{0}"
+    },
     "titcoin": {
        "name": "Titcoin",
        "symbol": "TIT",
