@@ -1224,7 +1224,7 @@ void yespowerURX_hash(const char* input, char* output, uint32_t len)
         .pers = (const uint8_t *)"UraniumX",
         .perslen = 8 
     };
-    yespower_tls( input, 80, &yespower_1_0_uraniumx, (yespower_binary_t *)output);
+    yespower_tls( input, len, &yespower_1_0_uraniumx, (yespower_binary_t *)output);
 }
 
 void yespowerLTNCG_hash(const char* input, char* output, uint32_t len)
@@ -1236,7 +1236,7 @@ void yespowerLTNCG_hash(const char* input, char* output, uint32_t len)
         .pers = (const uint8_t *)"LTNCGYES",
         .perslen = 8 
     };
-    yespower_tls( input, 80, &yespower_1_0_ltncg, (yespower_binary_t *)output);
+    yespower_tls( input, len, &yespower_1_0_ltncg, (yespower_binary_t *)output);
 }
 
 void yespowerLITB_hash(const char* input, char* output, uint32_t len)
@@ -1257,7 +1257,7 @@ void yespowerTIDE_hash(const char* input, char* output, uint32_t len)
 	{
 		.version = YESPOWER_1_0,
 		.N = 2048,
-		.r = 32,
+		.r = 8,
 		.pers = NULL,
 		.perslen = 0 
     };
