@@ -61,6 +61,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include "verushash/verus_hash.h"
 #include "yescrypt.h"
 #include "yespower/yespower.h"
+#include "sha256csm.h"
 
 extern "C" bool ethash_get_default_dirname(char* strbuf, size_t buffsize);
 
@@ -330,6 +331,11 @@ extern "C" MODULE_API void yespower_tide_export(const char* input, char* output,
 extern "C" MODULE_API void cpupower_export(const char* input, char* output, uint32_t input_len)
 {
     cpupower_hash(input, output, input_len);
+}
+
+extern "C" MODULE_API void sha256csm_export(const char* input, char* output, uint32_t input_len)
+{
+	sha256csm_hash(input, output, input_len);
 }
 
 extern "C" MODULE_API bool equihash_verify_200_9_export(const char* header, int header_length, const char* solution, int solution_length, const char *personalization)
