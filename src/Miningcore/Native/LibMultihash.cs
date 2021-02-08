@@ -150,7 +150,7 @@ namespace Miningcore.Native
         public static extern int lyra2rev3(byte* input, void* output);
         
         [DllImport("libmultihash", EntryPoint = "lyra2z_export", CallingConvention = CallingConvention.Cdecl)]
-        public static extern int lyra2z(byte* input, void* output, uint inputLength);
+        public static extern int lyra2z(byte* input, void* output);
         
         [DllImport("libmultihash", EntryPoint = "yespower_export", CallingConvention = CallingConvention.Cdecl)]
         public static extern int yespower(byte* input, void* output, uint inputLength);
