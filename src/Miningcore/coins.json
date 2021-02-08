@@ -474,6 +474,24 @@
         "explorerTxLink": "http://block.elicoin.net/?page=tx&id={0}",
         "explorerAccountLink": "http://block.elicoin.net/?page=search&id={0}"
     },
+    "fanaticos-cash": {
+        "name": "Fanaticos Cash",
+        "symbol": "FCH",
+        "family": "bitcoin",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "x13"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [ { "hash": "sha256d" } ]
+        },
+        "explorerBlockLink": "https://explorer.fanaticoscriptos.com/block/$hash$",
+        "explorerTxLink": "https://explorer.fanaticoscriptos.com/tx/{0}",
+        "explorerAccountLink": "https://explorer.fanaticoscriptos.com/address/{0}"
+    },
     "flo": {
         "name": "Florin",
         "symbol": "FLO",
