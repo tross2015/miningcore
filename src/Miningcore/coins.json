@@ -474,6 +474,30 @@
         "explorerTxLink": "http://block.elicoin.net/?page=tx&id={0}",
         "explorerAccountLink": "http://block.elicoin.net/?page=search&id={0}"
     },
+    "emark": {
+        "name": "Deutsche eMark",
+        "symbol": "DEM",
+        "family": "bitcoin",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "sha256d"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [ { "hash": "sha256d" } ]
+        },
+        "posBlockHasher": {
+            "hash": "reverse",
+            "args": [ { "hash": "sha256d" } ]
+        },
+        "coinbaseTxVersion": 2,
+        "coinbaseTxComment": "DEM Alphacore",
+        "explorerBlockLink": "http://46.232.249.107:3009/block/$hash$",
+        "explorerTxLink": "http://46.232.249.107:3009/tx/{0}",
+        "explorerAccountLink": "http://46.232.249.107:3009/address/{0}"
+    },
     "fanaticos-cash": {
         "name": "Fanaticos Cash",
         "symbol": "FCH",
@@ -517,7 +541,7 @@
             ]
         },
         "coinbaseTxVersion": 2,
-        "coinbaseTxComment": "FLO Miningcore",
+        "coinbaseTxComment": "FLO Alphacore",
         "shareMultiplier": 65536,
         "explorerBlockLink": "http://network.flo.cash/block/$hash$",
         "explorerTxLink": "http://network.flo.cash/tx/{0}",
