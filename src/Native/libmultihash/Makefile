@@ -13,7 +13,7 @@ OBJECTS = bcrypt.o blake.o blake2s.o c11.o dcrypt.o fresh.o lane.o \
     sha3/sph_haval.o sha3/sph_sha2.o sha3/sph_sha2big.o sha3/sph_blake2s.o sha3/sm3.o sha3/panama.o \
     sha3/extra.o sha3/gost_streebog.o sha3/sph_tiger.o sha3/SWIFFTX.o KeccakP-800-reference.o \
     shavite3.o skein.o x11.o x13.o x15.o x17.o x16r.o x16rv2.o x16s.o x21s.o odocrypt.o x25x.o \
-    Lyra2.o Lyra2RE.o Lyra2-z.o Layra2z.o Sponge.o geek.o balloon.o sha256csm.o \
+    Lyra2.o Lyra2RE.o Lyra2-z.o Lyra2z.o Sponge.o geek.o balloon.o sha256csm.o \
 	yescrypt.o yescrypt-opt.o sha256_Y.o \
 	yespower/yespower-platform.o yespower/yespower-combined.o \
     equi/util.o equi/support/cleanse.o equi/random.o \
