@@ -275,8 +275,7 @@
     <ClInclude Include="x25x.h" />
     <ClInclude Include="yescrypt.h" />
     <ClInclude Include="yespower\yespower.h" />
-    <ClInclude Include="Lyra2-z.h" />
-    <ClInclude Include="Lyra2z.h" />
+    <ClInclude Include="Lyra2Z.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="balloon.c" />
@@ -372,8 +371,7 @@
     <ClCompile Include="yescrypt-opt.c" />
     <ClCompile Include="yespower\yespower-combined.c" />
     <ClCompile Include="yespower\yespower-platform.c" />
-    <ClCompile Include="Lyra2-z.c" />
-    <ClCompile Include="Lyra2z.c" />
+    <ClCompile Include="Lyra2Z.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="equi\crypto\equihash.tcc" />
