@@ -215,7 +215,13 @@
     <ClInclude Include="libethash\sha3.h" />
     <ClInclude Include="libethash\util.h" />
     <ClInclude Include="Lyra2.h" />
-    <ClInclude Include="Lyra2RE.h" />
+    <ClInclude Include="Lyra2re.h" />
+    <ClInclude Include="lyra2v2.h" />
+    <ClInclude Include="lyra2v3.h" />
+    <ClInclude Include="lyra2vc0ban.h" />
+    <ClInclude Include="lyra2z.h" />
+    <ClInclude Include="Lyra2-z.h" />
+    <ClInclude Include="lyra2z330.h" />
     <ClInclude Include="neoscrypt.h" />
     <ClInclude Include="nist5.h" />
     <ClInclude Include="odocrypt.h" />
@@ -275,7 +281,6 @@
     <ClInclude Include="x25x.h" />
     <ClInclude Include="yescrypt.h" />
     <ClInclude Include="yespower\yespower.h" />
-    <ClInclude Include="Lyra2Z.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="balloon.c" />
@@ -315,7 +320,13 @@
     <ClCompile Include="libethash\sha3.c" />
     <ClCompile Include="libethash\util_win32.c" />
     <ClCompile Include="Lyra2.c" />
-    <ClCompile Include="Lyra2RE.c" />
+    <ClCompile Include="lyra2re.c" />
+    <ClCompile Include="lyra2v2.c" />
+    <ClCompile Include="lyra2v3.c" />
+    <ClCompile Include="lyra2vc0ban.c" />
+    <ClCompile Include="lyra2z.c" />
+    <ClCompile Include="Lyra2-z.c" />
+    <ClCompile Include="lyra2z330.c" />
     <ClCompile Include="neoscrypt.c" />
     <ClCompile Include="exports.cpp" />
     <ClCompile Include="nist5.c" />
@@ -371,7 +382,6 @@
     <ClCompile Include="yescrypt-opt.c" />
     <ClCompile Include="yespower\yespower-combined.c" />
     <ClCompile Include="yespower\yespower-platform.c" />
-    <ClCompile Include="Lyra2Z.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="equi\crypto\equihash.tcc" />
