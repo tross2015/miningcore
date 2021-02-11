@@ -1,6 +1,7 @@
 /*
 Copyright 2017 Coin Foundry (coinfoundry.org)
 Authors: Oliver Weichhold (oliver@weichhold.com)
+         Olaf Wasilewski (olaf.wasilewski@gmx.de)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
 associated documentation files (the "Software"), to deal in the Software without restriction,
@@ -240,7 +241,7 @@ namespace Miningcore.Blockchain.Bitcoin
             // extract worker/miner/payoutid
             var split = workerValue.Split('.');
             var minerName = split[0];
-            var workerName = split.Length > 1 ? split[1] : null;
+            var workerName = split.Length > 1 ? split[1] : "0";
 
             // validate & process
             var (share, blockHex) = job.ProcessShare(worker, extraNonce2, nTime, nonce, versionBits);
