@@ -215,7 +215,7 @@
     <ClInclude Include="libethash\sha3.h" />
     <ClInclude Include="libethash\util.h" />
     <ClInclude Include="Lyra2.h" />
-    <ClInclude Include="Lyra2re.h" />
+    <ClInclude Include="lyra2re.h" />
     <ClInclude Include="lyra2v2.h" />
     <ClInclude Include="lyra2v3.h" />
     <ClInclude Include="lyra2vc0ban.h" />
