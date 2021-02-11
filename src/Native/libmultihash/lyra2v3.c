@@ -2,9 +2,9 @@
 #include <stdint.h>
 #include <string.h>
 #include <stdio.h>
-#include "../sha3/sph_blake.h"
-#include "../sha3/sph_cubehash.h"
-#include "../sha3/sph_bmw.h"
+#include "sha3/sph_blake.h"
+#include "sha3/sph_cubehash.h"
+#include "sha3/sph_bmw.h"
 #include "Lyra2.h"
 
 void lyra2v3_hash(const char* input, char* output, uint32_t len)
