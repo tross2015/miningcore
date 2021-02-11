@@ -488,10 +488,6 @@
             "hash": "reverse",
             "args": [ { "hash": "sha256d" } ]
         },
-        "posBlockHasher": {
-            "hash": "reverse",
-            "args": [ { "hash": "sha256d" } ]
-        },
         "coinbaseTxVersion": 2,
         "coinbaseTxComment": "DEM Alphacore",
         "explorerBlockLink": "http://46.232.249.107:3009/block/$hash$",
