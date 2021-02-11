@@ -1,6 +1,7 @@
 /*
 Copyright 2017 Coin Foundry (coinfoundry.org)
 Authors: Oliver Weichhold (oliver@weichhold.com)
+         Olaf Wasilewski (olaf.wasilewski@gmx.de)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
 associated documentation files (the "Software"), to deal in the Software without restriction,
@@ -77,7 +78,7 @@ namespace Miningcore.Blockchain.Cryptonote
             // extract worker/miner/paymentid
             var split = loginRequest.Login.Split('.');
             context.Miner = split[0].Trim();
-            context.Worker = split.Length > 1 ? split[1].Trim() : null;
+            context.Worker = split.Length > 1 ? split[1].Trim() : "0";
             context.UserAgent = loginRequest.UserAgent?.Trim();
 
             var addressToValidate = context.Miner;
