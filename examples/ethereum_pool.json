@@ -43,7 +43,7 @@
         "shareRecoveryFile": "recovered-shares.txt"
     },
     "pools": [{
-        "id": "eth1",
+        "id": "eth",
         "enabled": true,
         "coin": "ethereum",
         "address": "0x0942e9144606ad43f2e61a7ee332fe9914424712",
@@ -62,17 +62,14 @@
         },
         "ports": {
             "3072": {
+                "listenAddress": "0.0.0.0",
                 "difficulty": 0.1,
                 "varDiff": {
                     "minDiff": 0.05,
-                    "maxDiff": null,
                     "targetTime": 15,
                     "retargetTime": 90,
                     "variancePercent": 30
                 }
-            },
-            "3073": {
-                "difficulty": 5000
             }
         },
         "daemons": [
