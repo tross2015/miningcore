@@ -1,6 +1,7 @@
 /*
 Copyright 2017 Coin Foundry (coinfoundry.org)
 Authors: Oliver Weichhold (oliver@weichhold.com)
+         Olaf Wasilewski (olaf.wasilewski@gmy.de)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
 associated documentation files (the "Software"), to deal in the Software without restriction,
@@ -160,7 +161,7 @@ namespace Miningcore.Blockchain.Equihash
 
             var context = client.ContextAs<BitcoinWorkerContext>();
             var requestParams = request.ParamsAs<string[]>();
-            var workerValue = requestParams?.Length > 0 ? requestParams[0] : null;
+            var workerValue = requestParams?.Length > 0 ? requestParams[0] : "0";
             var password = requestParams?.Length > 1 ? requestParams[1] : null;
             var passParts = password?.Split(PasswordControlVarsSeparator);
 
