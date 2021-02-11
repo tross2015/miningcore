@@ -141,16 +141,22 @@ namespace Miningcore.Native
         public static extern int geek(byte* input, void* output, uint inputLength);
 
         [DllImport("libmultihash", EntryPoint = "lyra2re_export", CallingConvention = CallingConvention.Cdecl)]
-        public static extern int lyra2re(byte* input, void* output);
+        public static extern int lyra2re(byte* input, void* output, uint inputLength);
 
         [DllImport("libmultihash", EntryPoint = "lyra2rev2_export", CallingConvention = CallingConvention.Cdecl)]
-        public static extern int lyra2rev2(byte* input, void* output);
+        public static extern int lyra2rev2(byte* input, void* output, uint inputLength);
 
         [DllImport("libmultihash", EntryPoint = "lyra2rev3_export", CallingConvention = CallingConvention.Cdecl)]
-        public static extern int lyra2rev3(byte* input, void* output);
+        public static extern int lyra2rev3(byte* input, void* output, uint inputLength);
         
         [DllImport("libmultihash", EntryPoint = "lyra2z_export", CallingConvention = CallingConvention.Cdecl)]
-        public static extern int lyra2z(byte* input, void* output);
+        public static extern int lyra2z(byte* input, void* output, uint inputLength);
+        
+        [DllImport("libmultihash", EntryPoint = "lyra2vc0ban_export", CallingConvention = CallingConvention.Cdecl)]
+        public static extern int lyra2vc0ban(byte* input, void* output, uint inputLength);
+        
+        [DllImport("libmultihash", EntryPoint = "lyra2z330_export", CallingConvention = CallingConvention.Cdecl)]
+        public static extern int lyra2z330(byte* input, void* output, uint inputLength);
         
         [DllImport("libmultihash", EntryPoint = "yespower_export", CallingConvention = CallingConvention.Cdecl)]
         public static extern int yespower(byte* input, void* output, uint inputLength);
