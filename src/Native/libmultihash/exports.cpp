@@ -47,8 +47,13 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include "jh.h"
 #include "c11.h"
 #include "Lyra2.h"
-#include "Lyra2RE.h"
-#include "Lyra2Z.h"
+#include "Lyra2-z.h"
+#include "lyra2re.h"
+#include "lyra2v2.h"
+#include "lyra2v3.h"
+#include "lyra2vc0ban.h"
+#include "lyra2z.h"
+#include "lyra2z330.h"
 #include "x16r.h"
 #include "x16rv2.h"
 #include "x16s.h"
@@ -214,24 +219,34 @@ extern "C" MODULE_API void c11_export(const char* input, char* output)
 	c11_hash(input, output);
 }
 
-extern "C" MODULE_API void lyra2re_export(const char* input, char* output)
+extern "C" MODULE_API void lyra2re_export(const char* input, char* output, uint32_t input_len)
 {
-	lyra2re_hash(input, output);
+	lyra2re_hash(input, output, input_len);
 }
 
-extern "C" MODULE_API void lyra2rev2_export(const char* input, char* output)
+extern "C" MODULE_API void lyra2rev2_export(const char* input, char* output, uint32_t input_len)
 {
-	lyra2re2_hash(input, output);
+	lyra2v2_hash(input, output, input_len);
 }
 
-extern "C" MODULE_API void lyra2rev3_export(const char* input, char* output)
+extern "C" MODULE_API void lyra2rev3_export(const char* input, char* output, uint32_t input_len)
 {
-	lyra2re3_hash(input, output);
+	lyra2v3_hash(input, output, input_len);
 }
 
-extern "C" MODULE_API void lyra2z_export(const char* input, char* output)
+extern "C" MODULE_API void lyra2vc0ban_export(const char* input, char* output, uint32_t input_len)
 {
-	lyra2z_hash(input, output);
+	lyra2vc0ban_hash(input, output, input_len);
+}
+
+extern "C" MODULE_API void lyra2z_export(const char* input, char* output, uint32_t input_len)
+{
+	lyra2z_hash(input, output, input_len);
+}
+
+extern "C" MODULE_API void lyra2z330_export(const char* input, char* output, uint32_t input_len)
+{
+	lyra2z330_hash(input, output, input_len);
 }
 
 extern "C" MODULE_API void x16r_export(const char* input, char* output, uint32_t input_len)
