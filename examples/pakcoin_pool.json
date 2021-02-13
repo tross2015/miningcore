@@ -43,7 +43,7 @@
         "shareRecoveryFile": "recovered-shares.txt"
     },
     "pools": [{
-      "id": "pak1",
+      "id": "pak",
       "enabled": true,
       "coin": "pakcoin",
       "hasLegacyDaemon": true,
