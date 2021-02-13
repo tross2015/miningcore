@@ -43,7 +43,7 @@
         "shareRecoveryFile": "recovered-shares.txt"
     },
     "pools": [{
-      "id": "ltc1",
+      "id": "ltc",
       "enabled": true,
       "coin": "litecoin",
       "address": "LNDA11u4HWzbJaBGiHDvs6SmA8M6avB3wH",
