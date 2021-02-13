@@ -42,7 +42,7 @@
         "interval": 600,
         "shareRecoveryFile": "recovered-shares.txt"
     },
-"pools": [{
+    "pools": [{
         "id": "vrsc",
         "enabled": true,
         "coin": "veruscoin",
