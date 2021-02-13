@@ -43,7 +43,7 @@
         "shareRecoveryFile": "recovered-shares.txt"
     },
     "pools": [{
-      "id": "dgb-scrypt-1",
+      "id": "dgb-scrypt",
       "enabled": true,
       "coin": "digibyte-scrypt",
       "address": "DAFtYMGVdNtqHJoBGg2xqZZwSuYAaEs2Bn",
