@@ -43,7 +43,7 @@
         "shareRecoveryFile": "recovered-shares.txt"
     },
     "pools": [{
-        "id": "dash1",
+        "id": "dash",
         "enabled": true,
         "coin": "dash",
         "address": "XgmfWd5DXWGcYhxPcDPUJk44Cnh2e8tZk7",
