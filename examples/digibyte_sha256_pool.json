@@ -43,7 +43,7 @@
         "shareRecoveryFile": "recovered-shares.txt"
     },
     "pools": [{
-      "id": "dgb-sha256-1",
+      "id": "dgb-sha256",
       "enabled": true,
       "coin": "digibyte-sha256",
       "address": "DAFtYMGVdNtqHJoBGg2xqZZwSuYAaEs2Bn",
