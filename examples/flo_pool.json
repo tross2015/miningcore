@@ -44,9 +44,9 @@
   },
   "pools": [
     {
-      "id": "flo1",
+      "id": "flo",
       "enabled": true,
-      "coin": "flo",
+      "coin": "florincoin",
       "address": "FC3d6JT1Z3uZvKVNWjKt3qN8PX8knhAU7d",
       "rewardRecipients": [
         {
