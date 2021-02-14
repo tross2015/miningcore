@@ -335,6 +335,7 @@
     <ClCompile Include="qubit.c" />
     <ClCompile Include="s3.c" />
     <ClCompile Include="scryptn.c" />
+    <ClCompile Include="sha256.c" />
     <ClCompile Include="sha256csm.c" />
     <ClCompile Include="sha256_Y.c" />
     <ClCompile Include="sha3\aes_helper.c" />
