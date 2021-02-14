@@ -412,6 +412,9 @@
     <ClCompile Include="scryptn.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="sha256.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="shavite3.c">
       <Filter>Source Files</Filter>
     </ClCompile>
