@@ -23,6 +23,45 @@
         "explorerTxLink": "https://explorer.fiveg.cash/tx/{0}",
         "explorerAccountLink": "https://explorer.fiveg.cash/address/{0}"
     },
+    "actinium": {
+        "name": "Actinium",
+        "symbol": "ACM",
+        "family": "bitcoin",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "lyra2z"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [ { "hash": "lyra2z" } ]
+        },
+        "shareMultiplier": 4096,
+        "explorerBlockLink": "https://explorer.actinium.org/block/$hash$",
+        "explorerTxLink": "https://explorer.actinium.org/tx/{0}",
+        "explorerAccountLink": "https://explorer.actinium.org/address/{0}"
+    },
+    "alpscoin": {
+        "name": "Alpenstars",
+        "symbol": "ALPS",
+        "family": "bitcoin",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "lyra2z"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [ { "hash": "lyra2z" } ]
+        },
+        "hasMasterNodes": true,
+        "shareMultiplier": 4096,
+        "explorerBlockLink": "http://blockexplorer.alps.network/block/$hash$",
+        "explorerTxLink": "http://blockexplorer.alps.network/tx/{0}",
+        "explorerAccountLink": "http://blockexplorer.alps.network/address/{0}"
+    },
     "axe": {
         "name": "Axe",
         "symbol": "AXE",
