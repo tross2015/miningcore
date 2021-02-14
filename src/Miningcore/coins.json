@@ -682,6 +682,24 @@
         "explorerTxLink": "http://157.245.248.32:3000/#/tx/{0}",
         "explorerAccountLink": "http://157.245.248.32:3000/#/address/{0}"
     },
+    "kryptofranc": {
+        "name": "Kryptofranc",
+        "symbol": "KYF",
+        "family": "bitcoin",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "sha256d"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [ { "hash": "sha256d" } ]
+        },
+        "explorerBlockLink": "https://kryptofranc.com/blocks.php?search=$height$",
+        "explorerTxLink": "https://kryptofranc.com/blocks.php?search={0}",
+        "explorerAccountLink": "https://kryptofranc.com/blocks.php?search={0}"
+    },
     "lanacoin": {
         "name": "Lanacoin",
         "symbol": "LANA",
