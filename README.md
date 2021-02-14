@@ -16,7 +16,7 @@
 
 ### Supported Coins
 
-Refer to [this file](https://github.com/DirtyHarryDev/miningcore/blob/master/src/Miningcore/coins.json) for a complete list.
+Refer to [this file](https://github.com/AlphaX-Projects/miningcore/blob/master/src/Miningcore/coins.json) for a complete list.
 
 #### Ethereum
 
