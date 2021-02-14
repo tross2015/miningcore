@@ -181,7 +181,7 @@ namespace Miningcore.Mining
                         var poolHashesCountAccumulated = result.Sum(x => x.Count);
                         var poolHashrate = pool.HashrateFromShares(poolHashesAccumulated, windowActual) * HashrateBoostFactor;
                         
-                        if(poolId == "idx" || poolId == "vgc" || poolId == "shroud" || poolId == "ecc" || poolId == "gold" || poolId == "eli"){
+                        if(poolId == "idx" || poolId == "vgc" || poolId == "shroud" || poolId == "ecc" || poolId == "gold" || poolId == "eli" || poolId == "acm"){
                             poolHashrate *= 11.2;
                         }
                         
@@ -262,7 +262,7 @@ namespace Miningcore.Mining
                             if(windowActual >= MinHashrateCalculationWindow)
                             {
                                 var hashrate = pool.HashrateFromShares(item.Sum, windowActual) * HashrateBoostFactor;
-                                if(poolId == "idx" || poolId == "vgc" || poolId == "shroud" || poolId == "ecc" || poolId == "gold" || poolId == "eli"){
+                                if(poolId == "idx" || poolId == "vgc" || poolId == "shroud" || poolId == "ecc" || poolId == "gold" || poolId == "eli" || poolId == "acm"){
                                     hashrate *= 11.2;
                                 }
                                 minerTotalHashrate += hashrate;
