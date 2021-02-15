@@ -46,6 +46,7 @@
       "id": "dgb-sha256",
       "enabled": true,
       "coin": "digibyte-sha256",
+      "gbtArgs": [{"rules": [ "segwit" ]}, "sha256d"],
       "address": "DAFtYMGVdNtqHJoBGg2xqZZwSuYAaEs2Bn",
       "rewardRecipients": [
         {
