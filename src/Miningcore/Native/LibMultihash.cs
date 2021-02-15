@@ -69,7 +69,7 @@ namespace Miningcore.Native
         public static extern int odocrypt(byte* input, void* output, uint inputLength, uint key);
 
         [DllImport("libmultihash", EntryPoint = "neoscrypt_export", CallingConvention = CallingConvention.Cdecl)]
-        public static extern int neoscrypt(byte* input, void* output, uint inputLength, uint profile);
+        public static extern int neoscrypt(byte* password, void* output, uint inputLength, uint profile);
 
         [DllImport("libmultihash", EntryPoint = "scryptn_export", CallingConvention = CallingConvention.Cdecl)]
         public static extern int scryptn(byte* input, void* output, uint nFactor, uint inputLength);
