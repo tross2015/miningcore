@@ -50,7 +50,7 @@
             "rewardRecipients": [
                 {
                     "address": "WALLET ADDRESS",
-                    "percentage": 0.8
+                    "percentage": 1
                 }
             ],
             "blockRefreshInterval": 400,
@@ -64,8 +64,8 @@
             },
             "ports": {
                 "6755": {
-                    "listenAddress": "192.168.1.100",
-                    "difficulty": 8190,
+                "listenAddress": "0.0.0.0",
+                "difficulty": 8190,
                 "name": "ASIC Mining",
                 "varDiff": {
                     "minDiff": 8190,
@@ -79,7 +79,7 @@
                 {
                     "host": "127.0.0.1",
                     "port": 9337,
-                    "user": "mcorerpc",
+                    "user": "RPC USER",
                     "password": "RPC PASSWORD"
             	 }
             ],
