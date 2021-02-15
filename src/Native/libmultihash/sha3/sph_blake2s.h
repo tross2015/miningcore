@@ -25,6 +25,10 @@
 #define ALIGN(x) __attribute__((aligned(x)))
 #endif
 
+#if defined(_MSC_VER) || defined(__x86_64__) || defined(__x86__)
+#define NATIVE_LITTLE_ENDIAN
+#endif
+
 /* blake2-impl.h */
 
 static inline uint32_t load32(const void *src)
@@ -148,3 +152,4 @@ extern "C" {
 #endif
 
 #endif
+
