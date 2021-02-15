@@ -44,7 +44,7 @@
     },
     "pools": [{
          "id": "dem",
-         "enabled": false,
+         "enabled": true,
          "coin": "emark",
          "hasLegacyDaemon": true,
          "useP2PK": true,
