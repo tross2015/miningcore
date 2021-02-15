@@ -15,8 +15,11 @@
 #include <string.h>
 #include <stdio.h>
 
-#include "sph_types.h"
+#if defined(__cplusplus)
+extern "C" {
+#endif
 
+#include "sph_types.h"
 #include "sph_blake2s.h"
 
 static const uint32_t blake2s_IV[8] =
@@ -346,6 +349,11 @@ int blake2s( uint8_t *out, const void *in, const void *key, const uint8_t outlen
 	blake2s_final( S, out, outlen );
 	return 0;
 }
+
+#if defined(__cplusplus)
+}
+#endif
+
 
 #if defined(BLAKE2S_SELFTEST)
 #include <string.h>
