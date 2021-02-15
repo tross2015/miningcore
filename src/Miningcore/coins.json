@@ -672,7 +672,7 @@
             "hash": "reverse",
             "args": [ { "hash": "groestl" } ]
         },
-        "shareMultiplier": 256,
+        "shareMultiplier": 4096,
         "explorerBlockLink": "https://groestlsight.groestlcoin.org/block/$height$",
         "explorerTxLink": "https://groestlsight.groestlcoin.org/tx/{0}",
         "explorerAccountLink": "https://groestlsight.groestlcoin.org/address/{0}"
@@ -973,13 +973,13 @@
             "hash": "sha256d"
         },
         "headerHasher": {
-            "hash": "x16s"
+            "hash": "x21s"
         },
         "blockHasher": {
             "hash": "reverse",
-            "args": [ { "hash": "x16s" } ]
+            "args": [ { "hash": "x21s" } ]
         },
-        "shareMultiplier": 256,
+        "shareMultiplier": 4096,
         "explorerBlockLink": "http://explorer.pigeoncoin.org/block/$hash$",
         "explorerTxLink": "http://explorer.pigeoncoin.org/tx/{0}",
         "explorerAccountLink": "http://explorer.pigeoncoin.org/address/{0}"
