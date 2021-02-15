@@ -112,9 +112,9 @@ extern "C" MODULE_API void x15_export(const char* input, char* output, uint32_t 
 	x15_hash(input, output, input_len);
 }
 
-extern "C" MODULE_API void neoscrypt_export(const unsigned char* password, unsigned char* output, unsigned int profile)
+extern "C" MODULE_API void neoscrypt_export(const unsigned char* input, unsigned char* output, unsigned int profile)
 {
-	neoscrypt(password, output, profile);
+	neoscrypt(input, output, profile);
 }
 
 extern "C" MODULE_API void scryptn_export(const char* input, char* output, uint32_t nFactor, uint32_t input_len)
