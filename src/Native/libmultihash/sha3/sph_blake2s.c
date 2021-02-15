@@ -17,7 +17,7 @@
 
 #include "sph_types.h"
 
-#include "blake2s.h"
+#include "sph_blake2s.h"
 
 static const uint32_t blake2s_IV[8] =
 {
