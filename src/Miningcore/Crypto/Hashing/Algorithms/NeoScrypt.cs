@@ -38,11 +38,11 @@ namespace Miningcore.Crypto.Hashing.Algorithms
             Contract.Requires<ArgumentException>(data.Length == 80, $"{nameof(data)} length must be exactly 80 bytes");
             Contract.Requires<ArgumentException>(result.Length >= 32, $"{nameof(result)} must be greater or equal 32 bytes");
 
-            fixed (byte* input = data)
+            fixed (byte* password = data)
             {
                 fixed (byte* output = result)
                 {
-                    LibMultihash.neoscrypt(input, output, (uint) data.Length, profile);
+                    LibMultihash.neoscrypt(password, output, (uint) data.Length, profile);
                 }
             }
         }
