@@ -1,6 +1,7 @@
 /*
 Copyright 2017 Coin Foundry (coinfoundry.org)
 Authors: Oliver Weichhold (oliver@weichhold.com)
+         Olaf Wasilewski (olaf.wasilewski@gmx.de)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
 associated documentation files (the "Software"), to deal in the Software without restriction,
@@ -35,7 +36,8 @@ namespace Miningcore.Blockchain.Cryptonote
         public uint Height { get; set; }
         public uint ExtraNonce { get; set; }
         public double Difficulty { get; set; }
-
+        public string SeedHash { get; set; }
+        
         public HashSet<string> Submissions { get; } = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
     }
 }
