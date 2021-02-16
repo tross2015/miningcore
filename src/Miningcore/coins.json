@@ -804,6 +804,32 @@
         "explorerTxLink": "https://chainz.cryptoid.info/lcc/tx.dws?{0}.htm",
         "explorerAccountLink": "https://chainz.cryptoid.info/lcc/address.dws?{0}.htm"
     },
+    "luckybit": {
+        "name": "Luckybit",
+        "symbol": "LUCKY",
+        "family": "bitcoin",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "neoscrypt",
+            "args": [ 0 ]
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [
+                {
+                    "hash": "neoscrypt",
+                    "args": [ 0 ]
+                }
+            ]
+        },
+        "hasMasterNodes": true,
+        "shareMultiplier": 65536,
+        "explorerBlockLink": "https://openchains.info/coin/luckybit/block/$height$",
+        "explorerTxLink": "https://openchains.info/coin/luckybit/tx/{0}",
+        "explorerAccountLink": "https://openchains.info/coin/luckybit/address/{0}"
+    },
     "monacoin": {
         "name": "Monacoin",
         "symbol": "MONA",
@@ -1152,6 +1178,25 @@
         "explorerBlockLink": "https://chainz.cryptoid.info/spk/block.dws?$height$.htm",
         "explorerTxLink": "https://chainz.cryptoid.info/spk/tx.dws?{0}.htm",
         "explorerAccountLink": "https://chainz.cryptoid.info/spk/address.dws?{0}.htm"
+    },
+    "stakecube": {
+        "name": "StakeCube",
+        "symbol": "SCC",
+        "family": "bitcoin",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "x11"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [ { "hash": "x11" } ]
+        },
+        "hasMasterNodes": true,
+        "explorerBlockLink": "https://scc.ccore.online/block/$height$",
+        "explorerTxLink": "https://scc.ccore.online/tx/{0}",
+        "explorerAccountLink":"https://scc.ccore.online/address/{0}"
     },
     "sugarchain": {
         "name": "Sugarchain",
