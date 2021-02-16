@@ -44,7 +44,7 @@ namespace Miningcore.Payments.PaymentSchemes
     // ReSharper disable once InconsistentNaming
     public class PPSPaymentScheme : IPayoutScheme
     {
-        public PPSPaymentScheme(IConnectionFactory cf,
+     public PPSPaymentScheme(IConnectionFactory cf,
             IShareRepository shareRepo,
             IBlockRepository blockRepo,
             IBalanceRepository balanceRepo)
@@ -82,11 +82,7 @@ namespace Miningcore.Payments.PaymentSchemes
             IPayoutHandler payoutHandler, Block block, decimal blockReward)
         {
             var payoutConfig = poolConfig.PaymentProcessing.PayoutSchemeConfig;
-
-            // PPLNS window (see https://bitcointalk.org/index.php?topic=39832)
             var window = payoutConfig?.ToObject<Config>()?.Factor ?? 2.0m;
-
-            // calculate rewards
             var shares = new Dictionary<string, double>();
             var rewards = new Dictionary<string, decimal>();
             var shareCutOffDate = await CalculateRewardsAsync(poolConfig, block, blockReward, shares, rewards);
