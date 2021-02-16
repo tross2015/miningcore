@@ -1,6 +1,7 @@
 /*
 Copyright 2017 Coin Foundry (coinfoundry.org)
 Authors: Oliver Weichhold (oliver@weichhold.com)
+         Olaf Wasilewski (olaf.wasilewski@gmx.de)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
 associated documentation files (the "Software"), to deal in the Software without restriction,
@@ -32,6 +33,9 @@ namespace Miningcore.Blockchain.Cryptonote.DaemonResponses
 
         [JsonProperty("prev_hash")]
         public string PreviousBlockhash { get; set; }
+        
+        [JsonProperty("seed_hash")]
+        public string SeedHash { get; set; }
 
         [JsonProperty("reserved_offset")]
         public int ReservedOffset { get; set; }
